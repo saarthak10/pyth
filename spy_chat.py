@@ -1,5 +1,6 @@
 from datetime import datetime
-
+from colorconsole import terminal
+screen=terminal.get_terminal(conEmu=False)
 class Spy:
 
     def __init__(self, name, salutation, age, rating):
@@ -19,11 +20,11 @@ class ChatMessage:
         self.time = datetime.now()
         self.sent_by_me = sent_by_me
 
-spy = Spy('bond', 'Mr.', 24, 4.7)
+spy = Spy('Joker', 'Mr.', 24, 4.7)
 
-friend_one = Spy('Raja', 'Mr.', 4.9, 27)
-friend_two = Spy('Mata Hari', 'Ms.', 4.39, 21)
-friend_three = Spy('No', 'Dr.', 4.95, 37)
+friend_one = Spy('Smuggle', 'Mr.', 4.9, 27)
+friend_two = Spy('Scar', 'Ms.', 4.39, 21)
+friend_three = Spy('Weirdo', 'Dr.', 4.95, 37)
 
 
 friends = [friend_one, friend_two, friend_three]
